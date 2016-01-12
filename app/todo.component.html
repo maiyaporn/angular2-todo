@@ -1,0 +1,10 @@
+<div class="todo">
+  <todo-form
+    (newItem)="addItem($event)">
+  </todo-form>
+  <todo-list
+    [todos]="todos"
+    (updated)="updateItem($event)"
+    (deleted)="deleteItem($event)">
+  </todo-list>
+</div>

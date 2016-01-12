@@ -1,0 +1,11 @@
+<input type="checkbox"
+    [id]="'cbox'+idx"
+    [(ngModel)]="item.checked"
+    [checked]="item.checked"
+    aria-label="text" />
+<!-- [htmlFor]="'cbox'+i" -->
+<label
+    [class.checked]="item.checked"
+    (dblclick)="onEdit(item)">
+    {{item.text}}
+</label>

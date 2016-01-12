@@ -1,0 +1,25 @@
+<div class="todo-list">
+    <ul class="list-group">
+        <li *ngFor="#editItem of todos | sorting:'createdDate':'asc', #i=index"
+            class="list-group-item"
+            [class.checked]="editItem.item.checked">
+            <div>
+              <todo-detail
+                  [hidden]="editItem.editing"
+                  [item]="editItem.item"
+                  [idx]="i"
+                  (editing)="editItem.editing = true">
+              </todo-detail>
+              <todo-editor
+                  [item]="editItem.item"
+                  [hidden]="!editItem.editing"
+                  (saved)="onUpdated($event)"
+                  (canceled)="editItem.editing = false">
+              </todo-editor>
+              <button class="btn btn-link pull-right" (click)="onDelete(editItem.item)">
+                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+              </button>
+            </div>
+        </li>
+    </ul>
+</div>

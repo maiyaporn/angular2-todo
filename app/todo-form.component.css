@@ -1,0 +1,16 @@
+.todo-form {
+  padding-top: 20px;
+  width: 450px;
+}
+
+.todo-form input[type="text"] {
+  border-bottom: solid #DDDDDD 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+}
+
+.todo-form input:focus {
+    outline-width: 0;
+}

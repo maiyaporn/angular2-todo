@@ -1,0 +1,5 @@
+<input
+    class="edit-input no-border"
+    [(ngModel)]="item.text"
+    (keyup.enter)="onSaved()"
+    (blur)="onBlurred()"/>

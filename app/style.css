@@ -1,0 +1,13 @@
+body {
+  /*background-color: #F5F5F5;*/
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.todo {
+  vertical-align: middle;
+  width: 450px;
+}
+
+.glyphicon {
+  color: #555;
+}
