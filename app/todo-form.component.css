@@ -4,6 +4,7 @@
 }
 
 .todo-form input[type="text"] {
+  background-color: transparent;
   border-bottom: solid #DDDDDD 1px;
   border-top: none;
   border-left: none;
