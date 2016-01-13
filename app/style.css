@@ -1,11 +1,23 @@
 body {
-  /*background-color: #F5F5F5;*/
+  background-color: rgba(32, 32, 32, 0.03);
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding-top: 20px
+}
+
+footer {
+  text-align: center;
+}
+
+.intro {
+  padding: 20px 15px;
+  text-align: center;
 }
 
 .todo {
+  margin: auto;
   vertical-align: middle;
-  width: 450px;
+  width: 500px;
+  padding-bottom: 50px;
 }
 
 .glyphicon {
